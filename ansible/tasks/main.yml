@@ -1,2 +1,16 @@
 ---
-# tasks file for ansible
+# tasks file for hello
+- name: Printing a new line
+  debug:
+          msg: "Hello beautiful people me"
+  tags: print
+
+- name: using the command
+  command: "ifconfig"
+  register: cmd
+  tags: ifconfig
+
+- name: debuging the command
+  debug:
+          var: cmd
+  tags: cmd
