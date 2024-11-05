@@ -1,9 +1,8 @@
 ---
 - name: tags
-  hosts: all
+  hosts: localhost
+  gather_facts: true
   become: true
-  tasks:
-
-    - name: Import role
-      import_role: 
-        name: ansible
+  
+  roles: 
+        - ansible
