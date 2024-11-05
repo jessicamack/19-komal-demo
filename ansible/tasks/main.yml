@@ -1,13 +1,16 @@
 ---
 # tasks file for hello
-- debug:
+- name: Tags task 1
+  debug:
           msg: "with tag turnoff"
   tags: turnoff
 
-- debug:
+- name: Tags task 2
+  debug:
           msg: "with tag turnoff"
   tags: turnoff
 
-- debug:
+- name: Tags task 3
+  debug:
           msg: "with tag turnon"
   tags: turnon
