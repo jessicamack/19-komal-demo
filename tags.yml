@@ -1,2 +1,9 @@
 ---
-hosts: all
+- name: tags
+  hosts: all
+  become: true
+  tasks:
+
+    - name: Import role
+      import_role: 
+        name: ansible
