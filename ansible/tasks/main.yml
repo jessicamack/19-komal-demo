@@ -1,16 +1,13 @@
 ---
 # tasks file for hello
-- name: Printing a new line
-  debug:
-          msg: "Hello beautiful people me"
-  tags: print
+- debug:
+          msg: "with tag turnoff"
+  tags: turnoff
 
-- name: using the command
-  command: "ifconfig"
-  register: cmd
-  tags: ifconfig
+- debug:
+          msg: "with tag turnoff"
+  tags: turnoff
 
-- name: debuging the command
-  debug:
-          var: cmd
-  tags: cmd
+- debug:
+          msg: "with tag turnon"
+  tags: turnon
