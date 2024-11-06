@@ -1,5 +1,5 @@
 ---
 # tasks file for hello
-- name: Initiate include separated-task-1
+- name: Initiate include separated-task
   include_tasks: ansible/tasks/separated-task.yml
 
