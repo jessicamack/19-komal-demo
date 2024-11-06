@@ -1,0 +1,15 @@
+---
+- name: Tags task 1
+  debug:
+          msg: "with tag turnoff"
+  tags: turnoff
+
+- name: Tags task 2
+  debug:
+          msg: "with tag turnoff"
+  tags: turnoff
+
+- name: Tags task 3
+  debug:
+          msg: "with tag turnon"
+  tags: turnon
