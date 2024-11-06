@@ -1,16 +1,5 @@
 ---
 # tasks file for hello
-- name: Tags task 1
-  debug:
-          msg: "with tag turnoff"
-  tags: turnoff
+- name: Initiate include separated-task-1
+  include_tasks: ansible/tasks/separated-task.yml
 
-- name: Tags task 2
-  debug:
-          msg: "with tag turnoff"
-  tags: turnoff
-
-- name: Tags task 3
-  debug:
-          msg: "with tag turnon"
-  tags: turnon
