@@ -9,3 +9,4 @@
     - name: Patching role
       import_role: 
         name: ansible
+      tag: patch
