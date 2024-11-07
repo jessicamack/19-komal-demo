@@ -1,6 +1,6 @@
 ---
 - name: tags
-  hosts: localhost
+  hosts: all
   gather_facts: true
   become: true
   
