@@ -2,8 +2,8 @@
 # tasks file for hello
 - name: Initiate include separated-task
   include_tasks: ansible/tasks/separated-task.yml
-    apply:
-      tags:
-        - turnon
-        - turnoff
+  apply:
+    tags:
+      - turnon
+      - turnoff
 
