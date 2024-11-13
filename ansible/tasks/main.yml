@@ -1,7 +1,7 @@
 ---
 # tasks file for hello
 - name: Initiate include separated-task
-  ansible.builtin.include_tasks:
+  ansible.builtin.import_tasks:
     file: ansible/tasks/separated-task.yml
     apply:
       tags:
