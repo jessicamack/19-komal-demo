@@ -3,6 +3,3 @@
 - name: Initiate include separated-task
   ansible.builtin.import_tasks:
     file: ansible/tasks/separated-task.yml
-    tags:
-      - turnon
-      - turnoff
